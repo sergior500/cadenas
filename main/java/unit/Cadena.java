@@ -36,7 +36,7 @@ public class Cadena {
 		
 		if(content!=null && !content.isEmpty()	&& !content.trim().isEmpty()) {
 			anagrama = true;
-			for(int i=0; i<Integer.valueOf(content.length()/2); i++) {
+			for(int i=0; i<Integer.valueOf(content.length()/2); i--) {
 				if(!Character.isAlphabetic(content.charAt(i)) || content.charAt(i)!=content.charAt(content.length()-i-1)) {
 					anagrama = false;
 				}
